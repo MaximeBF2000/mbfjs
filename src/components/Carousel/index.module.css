@@ -1,0 +1,79 @@
+.carouselContainer {
+  position: relative;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.carouselArrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  font-size: 2.3rem !important;
+  color: #fff;
+  opacity: .65;
+  transition: .3s !important;
+  z-index: 2;
+}
+.carouselArrow:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.08);
+}
+.ca_left {
+  left: 3rem;
+}
+.ca_right {
+  right: 3rem;
+}
+
+.carouselTilesRow {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  display: flex;
+  column-gap: .2rem;
+}
+.carouselTile {
+  cursor: pointer;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+.carouselTileActive {
+  opacity: 1;
+}
+
+.carouselSlides {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.carouselSlide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+}
+
+.carouselImgContainer {
+  width: 100%;
+  height: 100%;
+}
+.carouselImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carouselTextblock {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+}
+.carouselTitle {
+  font-size: 1.8rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}

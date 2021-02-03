@@ -1,0 +1,140 @@
+:root {
+  --player-color: #FF5733;
+}
+
+.playerContainer {
+  position: relative;
+  width: 640px;
+  height: 360px;
+  overflow: hidden;
+}
+
+.player {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.overlay {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.overlayTop {
+
+}
+
+.overlayBottom {
+  z-index: 3;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: .5rem;
+  right: .5rem;
+  /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)); */
+  backdrop-filter: blur(.3px);
+}
+
+.progressRow {
+  position: relative;
+  display: flex;
+}
+
+.progressBar {
+  flex: 1;
+  margin-right: 70px;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(116, 116, 116, 0.7);
+  transform: scaleY(1);
+  transition: .15s;
+}
+.progressBar:hover {
+  transform: scaleY(1.1);
+  background-color: rgb(116, 116, 116, .45);
+}
+.progressBarDone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: var(--player-color);
+}
+.progressBarBullet {
+  position: absolute;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--player-color);
+  transform: translateY(-50%) scale(1);
+  transition: .15s;
+}
+.progressBarBullet:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.progressTimestamp {
+  position: absolute;
+  bottom: -75%;
+  right: 0;
+  width: 50px;
+  font-size: .9rem;
+  color: #fefefe;
+}
+
+.controlsRow {
+  height: 100%;
+  padding: .6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fefefe;
+}
+
+.controlsRowLeft, .controlsRowRight {
+  display: flex;
+  align-items: center;
+}
+
+.iconBtnCenterContainer {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.iconBtnCenter {
+  font-size: 6rem !important;
+  transition: .3s !important;
+  color: #fefefe;
+}
+.iconBtnCenter:hover, .iconBtnCenter:focus {
+  color: var(--player-color);
+}
+
+.iconBtn {
+  cursor: pointer;
+  font-size: 1.8rem !important;
+  transition: all .15s !important;
+  transform: scale(1);
+}
+.iconBtn:hover, .iconBtn:focus {
+  color: var(--player-color);
+}
+.playBtn {
+  margin-right: .5rem;
+  font-size: 2.1rem !important;
+}
+.iconBtnMargin {
+  margin: 0 .3rem;
+}
+.videoTitle {
+  cursor: default;
+  margin-left: 1rem;
+  font-size: .9rem;
+  color: #fefefe;
+}
