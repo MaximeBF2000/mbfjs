@@ -41,7 +41,7 @@ const MyCarousel = () => {
     <Carousel>
       <Carousel.Slide img="image" title="title" text="text" />
       <Carousel.Slide img="image 2" title="title 2" text="text 2" />
-    </Carousel.Slide>
+    </Carousel>
   )
 }
 ```
@@ -56,6 +56,9 @@ img | Set the image of a slide | Carousel.Slide |
 title | Set the title of a slide | Carousel.Slide | 
 text | Set the text of a slide | Carousel.Slide | 
 color | Set the color of title & text of a slide | Carousel.Slide | 
+
+## VideoPlayer
+TODO : Not working yet
 
 
 ### notification
